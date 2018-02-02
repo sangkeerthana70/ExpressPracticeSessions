@@ -23,7 +23,7 @@ app.get('/food/dosa', function(request, response) {
 app.get('/food/:variety', function(request, response) {
     var foodVariety = request.params.variety;
     response.send('Instructions to make ' + foodVariety);
-})
+});
 
 app.listen(process.env.PORT, function() {
     console.log("listening on Port.....");
